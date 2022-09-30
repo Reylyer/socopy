@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <unistd.h>
-int main (int argc, char *argv )
+int main (argc, argv )
+int argc ;
+char *argv[ ] ;
 {
     execv ("/bin/echo", /* program yang dimuat – hanya full path */
     &argv[0] ) ;
