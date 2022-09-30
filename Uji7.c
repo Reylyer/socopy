@@ -8,9 +8,7 @@ int main() {
   int howmany, status, whichone, child1, child2;
   if ((child1 = (int)fork()) == 0) /* Parent melahirkan child ke-1 */
   {
-    printf("Hi, I am the first child, my ID is %d, and my parent ID
-
-    is %d\n", getpid(), getppid() ) ;
+    printf("Hi, I am the first child, my ID is %d, and my parent ID is %d\n", getpid(), getppid() ) ;
 
     sleep(10) ;
     printf("\nexiting first child\n");
@@ -22,9 +20,7 @@ int main() {
   }
   if ((child2 = (int)fork()) == 0) /* Parent melahirkan child ke-2 */
   {
-    printf("Hi, I am the second child, my ID is %d, and my parent ID
-
-    is %d\n", getpid(), getppid() ) ;
+    printf("Hi, I am the second child, my ID is %d, and my parent ID is %d\n", getpid(), getppid() ) ;
 
     sleep(5) ;
     printf("\nexiting second child\n");
